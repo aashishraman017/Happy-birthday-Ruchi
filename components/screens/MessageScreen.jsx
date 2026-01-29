@@ -15,8 +15,7 @@ I hope life gives you countless reasons to smile, the courage to chase everythin
 
 I also want to say this from my heart — I'm sorry for anything I may have done knowingly or unknowingly that hurt you, troubled you, or made you feel uncomfortable. It was never my intention, and I genuinely hope you can forgive me. You matter more than any mistake.
 
-This little surprise 🎁 is just a small way of saying how much you are appreciated.
-Something is on its way to you — I hope it brings a smile when it arrives.
+This little surprise 🎁 is just a small way of saying how much you are appreciated.Something is on its way to you — I hope it brings a smile when it arrives.
 You can track it here whenever you wish:`
 
   const link = "https://odrtrk.live/trk/366842831463"
@@ -49,7 +48,7 @@ You can track it here whenever you wish:`
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-4 max-w-4xl mx-auto bg-white">
       <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="mb-4">
-        <Image src="/gift.gif" alt="Gift" width={120} height={120} className="opacity-90" unoptimized />
+        <Image src="/gift.gif" alt="Gift" width={160} height={150} className="opacity-90" unoptimized />
       </motion.div>
 
       <motion.div
@@ -70,7 +69,7 @@ You can track it here whenever you wish:`
             {displayText.length >= fullMessage.length && (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
                 <div className="py-4 border-y border-gray-50">
-                  <p className="text-gray-400 text-[9px] uppercase tracking-[0.3em] font-medium mb-2">Tracking Your Gift</p>
+                  <p className="text-gray-400 text-[9px] uppercase tracking-[0.3em] font-medium mb-2">Track Your Gift</p>
                   <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-500 font-light break-all hover:text-blue-600 transition-colors text-base md:text-lg block underline">
                     {link}
                   </a>
