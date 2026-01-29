@@ -66,8 +66,15 @@ export default function CakeScreen({ onNext }) {
         </p>
       </motion.div>
 
+      {/* Center Image Section */}
       <div className="relative mb-20 z-10" onClick={!candlesBlown ? blowCandles : undefined}>
-        <div className="text-[12rem] md:text-[16rem] select-none filter drop-shadow-xl">🎂</div>
+        <div className="select-none filter drop-shadow-xl flex items-center justify-center">
+          <img 
+            src="/favicon.ico" 
+            alt="Cake replacement" 
+            className="w-48 h-48 md:w-64 md:h-64 object-contain"
+          />
+        </div>
         <audio ref={audioRef} src="/wishes.mp3" loop />
       </div>
 
