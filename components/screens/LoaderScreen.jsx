@@ -16,7 +16,7 @@ export default function LoaderScreen({ onDone }) {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           className="w-16 h-16 border-2 border-rose-100 border-t-rose-500 rounded-2xl mx-auto mb-8"
         />
-        <h2 className="text-sm tracking-[0.4em] font-light text-gray-400 uppercase text-center">Creating Magic</h2>
+        <h2 className="text-sm tracking-[0.4em] font-light text-gray-400 uppercase text-center">Prepairing the Magic</h2>
       </motion.div>
     </div>
   );
