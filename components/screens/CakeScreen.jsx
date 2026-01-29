@@ -62,13 +62,13 @@ export default function CakeScreen({ onNext }) {
           {candlesBlown ? <span className="text-rose-600">A beautiful year awaits you...</span> : "May your journey be as sweet as this moment."}
         </h2>
         <p className="text-gray-400 text-lg font-light tracking-[0.2em]">
-          {candlesBlown ? "Happy birthday Ruchi" : "Tap to start the celebration"}
+          {candlesBlown ? "Happy birthday Ruchi🖤" : "Tap to enter the celebration"}
         </p>
       </motion.div>
 
       <div className="relative mb-20 z-10" onClick={!candlesBlown ? blowCandles : undefined}>
         <div className="text-[12rem] md:text-[16rem] select-none filter drop-shadow-xl">🎂</div>
-        <audio ref={audioRef} src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" loop />
+        <audio ref={audioRef} src="/wishes.mp3" loop />
       </div>
 
       <motion.button
@@ -76,7 +76,7 @@ export default function CakeScreen({ onNext }) {
         onClick={candlesBlown ? onNext : blowCandles}
         className="px-14 py-5 bg-rose-600 text-white rounded-full font-black tracking-[0.5em] text-[10px] shadow-xl"
       >
-        {candlesBlown ? "CONTINUE" : "IGNITE"}
+        {candlesBlown ? "CONTINUE" : "START"}
       </motion.button>
 
       {candlesBlown && (
