@@ -49,7 +49,7 @@ You can track it here whenever you wish:`
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-4 max-w-4xl mx-auto bg-white">
       <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="mb-4">
-        <Image src="/gift.gif" alt="Gift" width={80} height={80} className="opacity-90" unoptimized />
+        <Image src="/gift.gif" alt="Gift" width={120} height={120} className="opacity-90" unoptimized />
       </motion.div>
 
       <motion.div
