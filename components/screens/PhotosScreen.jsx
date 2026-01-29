@@ -6,13 +6,17 @@ import { EffectCards, Autoplay } from "swiper/modules"
 import "swiper/css"; import "swiper/css/effect-cards"
 
 const photos = [
-  { src: "/1.jpeg.jpg" }, { src: "/2.jpeg.jpg" }, { src: "/3.jpeg.jpg" }, { src: "/4.jpeg.jpg" }, { src: "/5.jpeg.jpg" }
+  { src: "/1.jpeg" }, 
+  { src: "/2.jpeg" },
+  { src: "/3.jpeg" },
+  { src: "/4.jpeg" }, 
+  { src: "/5.jpeg" }
 ]
 
 export default function PhotosScreen({ onNext }) {
   return (
     <div className="flex flex-col items-center justify-center text-center px-6 min-h-screen bg-white">
-      <h2 className="text-3xl md:text-5xl font-serif italic text-gray-900 mb-12">Precious Memories</h2>
+      <h2 className="text-3xl md:text-5xl font-serif italic text-gray-900 mb-12">Your Precious Memories</h2>
       <div className="w-full max-w-sm mb-12">
         <Swiper effect="cards" grabCursor={true} modules={[EffectCards, Autoplay]} autoplay={{ delay: 2500 }} className="w-full">
           {photos.map((p, i) => (
@@ -24,7 +28,7 @@ export default function PhotosScreen({ onNext }) {
           ))}
         </Swiper>
       </div>
-      <button onClick={onNext} className="px-12 py-5 bg-rose-600 text-white rounded-full text-[10px] uppercase tracking-[0.5em] font-black shadow-xl">See Your Message</button>
+      <button onClick={onNext} className="px-12 py-5 bg-rose-600 text-white rounded-full text-[10px] uppercase tracking-[0.5em] font-black shadow-xl">See My Message</button>
     </div>
   );
 }
