@@ -72,7 +72,7 @@ export default function CakeScreen({ onNext }) {
           <img 
             src="/favicon.ico" 
             alt="Cake replacement" 
-            className="w-48 h-48 md:w-64 md:h-64 object-contain"
+            className="w-64 h-64 md:w-96 md:h-96 object-contain"
           />
         </div>
         <audio ref={audioRef} src="/wishes.mp3" loop />
