@@ -90,14 +90,6 @@ export default function PhotosScreen({ onNext }) {
         See My Message
       </button>
 
-      {/* 🔊 SAME VOLUME BUTTON (CakeScreen style) */}
-      <button
-        onClick={toggleMusic}
-        className="fixed bottom-6 right-6 p-4 bg-white/80 backdrop-blur-xl
-                   border border-gray-200 rounded-2xl text-gray-500 shadow-xl z-50"
-      >
-        {isPlaying ? <Volume2 size={22} /> : <VolumeX size={22} />}
-      </button>
     </div>
   )
 }
