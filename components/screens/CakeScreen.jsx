@@ -4,20 +4,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import confetti from "canvas-confetti"
 import { Volume2, VolumeX, Sparkles } from "lucide-react"
 
-const FLOATING_EMOJIS = ['🎈', '💖', '✨', '🌸', '🎁', '🎂', '🥳', '💗', '🎀', '☁️                                      ☁️
-                  🎈🎈
-                🎈🎈🎈
-             🎈🎈🎈🎈  ☁️
-              🎈🎈🎈🎈
-  ☁️          🎈🎈🎈
-                       \ | /
-                            ☁️', '..... (¯`Ruchi´¯)♥
-.......•.¸.•´
-....¸.•´
-... (
-☻/
-/▌♥♥
-/ \ ♥♥']
+const FLOATING_EMOJIS = ['🎈', '💖', '✨', '🌸', '🎁', '🎂', '🥳', '💗', '🎀']
 
 export default function CakeScreen({ onNext }) {
   const [candlesBlown, setCandlesBlown] = useState(false)
